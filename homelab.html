@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atanas Kupenov - Homelab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='index.html'">AK</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="homelab.html">Homelab</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Homelab Section -->
+    <section id="homelab">
+        <h2 class="section-title">Homelab Environment</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title" style="text-align: center;">Overview</h3>
+                <p class="project-description">
+                    Since 2018, I have maintained a personal homelab to serve as a practical learning ground for exploring and mastering DevOps tools and technologies. What began with a single Raspberry Pi 3B+ has evolved into a sophisticated, multi-server environment. This hands-on experience has been instrumental in developing my skills in Linux, networking, and containerization, forming the foundation of my DevOps expertise. The entire infrastructure is automated and managed using GitOps principles.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title" style="text-align: center;">Core Infrastructure</h3>
+                <div class="project-description">
+                    <ul>
+                        <li><strong>Compute:</strong> Ryzen 5 1600</li>
+                        <li><strong>Memory:</strong> 64GB DDR4 @ 3200MHz</li>
+                        <li><strong>Storage:</strong> 1x 512GB NVME SSD, 4x 4TB HDD in a RAIDZ configuration</li>
+                        <li><strong>Hypervisor:</strong> Proxmox VE</li>
+                        <li><strong>Networking:</strong> Mikrotik Routers and Switches</li>
+                        <li><strong>ARM Devices:</strong> Raspberry Pi 3B+, Raspberry Pi 4B 8GB, Raspberry Pi 5 8GB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title" style="text-align: center;">Key Projects & Accomplishments</h3>
+                <div class="project-description">
+                    <ul>
+                        <li><strong>Automated Provisioning:</strong> Implemented fully automated provisioning for both the Proxmox VE hypervisor, Ubuntu server and Widnwows Server templates using Packer and Ansible.</li>
+                        <li><strong>CI/CD Pipelines:</strong> Developed robust CI/CD pipelines with Ansible and GitLab CI for automated virtual machine deployment.</li>
+                        <li><strong>Kubernetes Orchestration:</strong> Automated the provisioning and maintenance of a native Kubernetes cluster using Ansible and GitLab CI. Migrated Docker-native applications to Kubernetes, managed declaratively with ArgoCD and GitOps workflows.</li>
+                        <li><strong>GitOps in Practice:</strong> Leveraged ArgoCD for GitOps-driven management of Kubernetes applications, including Nginx Ingress, MetalLB, Prometheus, Grafana, and more.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title" style="text-align: center;">Applications used</h3>
+                <div class="project-description">
+                    <ul>
+                        <li>I've used my homelab to experiment with a wide range of applications, including:</li>
+                        <li>Git Repo Platforms : GitLab, Github, BitBucket</li>
+                        <li>GitOps : ArgoCD, FluxCD</li>
+                        <li>Monitoring : Prometheus, Victoria Metrics, Node-Exporter, CadVisor Grafana, Loki, CheckMK, Uptime Kuma, PRTG, Icinga</li>
+                        <li>Networking : Nginx, Apache2, NSX-T, NSX-V, Unifi Network Application, MetalLB</li>
+                        <li>Containerization : Docker, Podman, LXC, Portainer, Kubernetes, K3s, Tanzu, Minikube, Helm</li>
+                        <li>VPN : OpenVPN, WireGuard, Twingate, L2TP</li>
+                        <li>DNS : Pi-hole, Gravity Sync, External DNS </li>
+                        <li>Media Management : Plex, Jellyfin, Arr Stack</li>
+                        <li>Various databases : PostgreSQL, MySQL, MongoDB</li>
+                        <li>Configuration Management : Ansible, Terraform, Docker-Compose, HashiCorp Packer, AWX (Ansible Tower), Semaphore</li>
+                        <li>Virtualization : ESXi, vCenter, vRealize Automation, vRealize Orchestration, Proxmox VE, Hyper-V, VirtualBox</li>
+                        <li>Cloud Platforms: AWS, GCP, VMC (VMWare Cloud), Hetzner</li>
+                        <li>Pipelines : Jenkins, Gitlab CI, GitHub Actions, GoCD</li>
+                        <li>Secrets Management : Sealed Secrets, HashiCorp Vault.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

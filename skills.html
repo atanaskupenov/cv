@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atanas Kupenov - Skills</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='index.html'">AK</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="homelab.html">Homelab</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        
+        <!-- CI/CD Pipeline Visualization -->
+        <div class="pipeline-container">
+            <h3 style="text-align: center; margin-bottom: 30px; color: var(--primary);">CI/CD Pipeline Architecture</h3>
+            <div class="pipeline">
+                <div class="pipeline-connector">
+                    <div class="pipeline-flow"></div>
+                </div>
+                <div class="pipeline-stage">
+                    <div class="stage-icon"><i class="devicon-git-plain"></i></div>
+                    <div class="stage-name">Code</div>
+                </div>
+                <div class="pipeline-stage">
+                    <div class="stage-icon"><i class="devicon-jenkins-line"></i></div>
+                    <div class="stage-name">Build</div>
+                </div>
+                <div class="pipeline-stage">
+                    <div class="stage-icon"><i class="devicon-pytest-plain"></i></div>
+                    <div class="stage-name">Test</div>
+                </div>
+                <div class="pipeline-stage">
+                    <div class="stage-icon"><i class="devicon-docker-plain"></i></div>
+                    <div class="stage-name">Package</div>
+                </div>
+                <div class="pipeline-stage">
+                    <div class="stage-icon"><i class="devicon-kubernetes-plain"></i></div>
+                    <div class="stage-name">Deploy</div>
+                </div>
+                <div class="pipeline-stage">
+                    <div class="stage-icon"><i class="devicon-grafana-original"></i></div>
+                    <div class="stage-name">Monitor</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-container">
+            <div class="skills-categories">
+                <!-- Infrastructure as Code -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-terraform-plain"></i></span>
+                        Infrastructure as Code
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Terraform</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Ansible</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Packer</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Docker Compose</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Container & Orchestration -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-docker-plain"></i></span>
+                        Containerization & Orchestration
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Docker</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Podman</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">LXC</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Portainer</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Kubernetes</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">K3s</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Tanzu</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Minikube</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Helm</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Git Repo Platforms -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-github-plain"></i></span>
+                        Git Repo Platforms
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">GitHub</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">GitLab</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">BitBucket</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CI/CD & GitOps -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-gitlab-plain"></i></span>
+                        CI/CD & GitOps
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">GitLab CI/CD</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Jenkins</div>
+                            <div class="skill-level">Beginner</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">FluxCD</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">ArgoCD</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">GitHub Actions</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">GoCD</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Git</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Platforms -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-amazonwebservices-plain-wordmark"></i></span>
+                        Cloud Platforms
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">AWS</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">VMware Cloud</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">GCP</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Hetzner</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoring & Observability -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-prometheus-original"></i></span>
+                        Monitoring & Observability
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Prometheus</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Victoria Metrics</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Node-Exporter</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CadVisor</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Grafana</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Loki</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CheckMK</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Uptime Kuma</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">PRTG</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Icinga</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">ELK Stack</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VMware Technologies -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><span class="esxi-icon"></span></span>
+                        VMware Technologies
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">vRealize Automation</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">vSphere</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">vSAN</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">ESXi</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">vCenter</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">vRealize Orchestrator</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">NSX-T</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">NSX-V</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Virtualization & Hypervisors -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-linux-plain"></i></span>
+                        Virtualization & Hypervisors
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Proxmox VE</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">ESXi</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Hyper-V</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">VirtualBox</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-linux-plain"></i></span>
+                        Operating Systems
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Linux (Debian)</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Linux (Ubuntu)</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Linux (RedHat)</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Windows Server</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Windows 8/10/11</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scripting & Development -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-bash-plain"></i></span>
+                        Scripting & Development
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Bash</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">PowerShell</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">REST APIs</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Configuration Management & Automation -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-ansible-plain"></i></span>
+                        Configuration Management & Automation
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Ansible</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Terraform</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Docker-Compose</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Packer</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">AWX (Ansible Tower)</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Semaphore</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Networking & Security -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><span class="unifi-icon"></span></span>
+                        Networking & Security
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Network Architecting</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">OpenVPN</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">WireGuard</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Twingate</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">L2TP</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Pritunl</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Nginx</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Apache2</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Unifi Network Application</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">MetalLB</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Pi-hole</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Gravity Sync</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">External DNS</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-postgresql-plain"></i></span>
+                        Databases
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">MSSQL</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">MySQL</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">NoSQL</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media Management -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-plex-plain"></i></span>
+                        Media Management
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Plex</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Jellyfin</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Arr Stack</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secrets Management -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-hashicorp-plain"></i></span>
+                        Secrets Management
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Sealed Secrets</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">HashiCorp Vault</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+
+                <!-- Disaster Recovery & Backup -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon"><i class="devicon-veeam-plain"></i></span>
+                        Disaster Recovery & Backup
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Veeam</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Commvault</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Valero</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

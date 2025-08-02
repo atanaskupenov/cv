@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atanas Kupenov - Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='index.html'">AK</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="homelab.html">Homelab</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title" style="text-align: center;">🏥 Healthcare Infrastructure Modernization</h3>
+                <p class="project-description">
+                    Led the complete infrastructure overhaul for 50+ healthcare clinics, implementing SD-WAN solution
+                    and centralized monitoring system. Achieved €130,000+ annual savings.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Terraform</span>
+                    <span class="tech-tag">Ansible</span>
+                    <span class="tech-tag">SD-WAN</span>
+                    <span class="tech-tag">Prometheus</span>
+                    <span class="tech-tag">Grafana</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title" style="text-align: center;">☁️ Hybrid Cloud Migration</h3>
+                <p class="project-description">
+                    Successfully migrated 2500+ VMs from on-premise to hybrid cloud infrastructure using VMware vRA,
+                    AWS, and VMware Cloud. Implemented autmation blueprints and workflows to streamline operations.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">VMware vRA</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Terraform</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title" style="text-align: center;">🔄 GitOps CI/CD Pipeline</h3>
+                <p class="project-description">
+                    Designed and implemented GitOps-based CI/CD pipeline using GitLab CI, Proxmox, Ansible and Terraform, allowing fully automated provisioning deployment and destroying of infrastructure.
+                    Reduced manual deployment time from hours to minutes while ensuring consistency across environments.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">GitLab CI</span>
+                    <span class="tech-tag">Proxmox</span>
+                    <span class="tech-tag">Ansible</span>
+                    <span class="tech-tag">Terraform</span>
+                    <span class="tech-tag">Docker</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title" style="text-align: center;">📊 Observability Platform</h3>
+                <p class="project-description">
+                    Built comprehensive monitoring and observability platform using Prometheus, Grafana, and CheckMK.
+                    Implemented custom dashboards and alerting rules for proactive infrastructure management.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Prometheus</span>
+                    <span class="tech-tag">Grafana</span>
+                    <span class="tech-tag">CheckMK</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Bash</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
